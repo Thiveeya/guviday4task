@@ -1,0 +1,19 @@
+let details1 = {name:"thivi",age:"25"};
+let details2 = {age:"25",name:"thivi"};
+let keys1 = Object.keys(details1);
+let keys2 = Object.keys(details2);
+let flag = true;
+if(keys1.length===keys2.length);
+{
+    for(let e of keys2)
+    {
+        if(details1[e]!==details2[e])
+        {
+            flag=false;
+            break;
+        }
+    }
+}
+else
+   flag = false
+flag?console.log("Equall"):console.log("Not Equall");
